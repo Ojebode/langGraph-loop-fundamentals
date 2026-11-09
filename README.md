@@ -1,5 +1,6 @@
 # Simple Agent Loop: Tool-Calling Agent in a Plain Python Loop
 A minimal tool-calling AI agent built with a plain Python `while` loop, no agent framework. It shows the **Think → Act → Observe** cycle that frameworks like LangGraph automate.
+
 <img width="1536" height="1024" alt="Agent Loop Message Flow Infographic" src="https://github.com/user-attachments/assets/a55ad556-a874-4de9-9bc1-dab4e577b18f" />
 
 ## How it works
