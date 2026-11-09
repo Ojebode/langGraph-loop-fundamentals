@@ -1,0 +1,201 @@
+Prompt: What is 32 multiplied by 32, then subtract 24 from the result?
+
+++++++++++++++++-STEP 1: INVOKING MODEL-++++++++++++++++
+
+{
+    "content": "",
+    "additional_kwargs": {
+        "refusal": null
+    },
+    "response_metadata": {
+        "token_usage": {
+            "completion_tokens": 17,
+            "prompt_tokens": 116,
+            "total_tokens": 133,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "model_provider": "openai",
+        "model_name": "gpt-4o-2024-08-06",
+        "system_fingerprint": "fp_f89046aead",
+        "id": "chatcmpl-EglZg4u6hBw0PwfrCHdTMqMJZUkTz",
+        "service_tier": "default",
+        "finish_reason": "tool_calls",
+        "logprobs": null
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1aa78-15b9-71e0-9a35-0c6936ad9500-0",
+    "tool_calls": [
+        {
+            "name": "calculator",
+            "args": {
+                "expression": "32 * 32"
+            },
+            "id": "call_9u8GykA62gHY4BCBmN3PE650",
+            "type": "tool_call"
+        }
+    ],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+        "input_tokens": 116,
+        "output_tokens": 17,
+        "total_tokens": 133,
+        "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+        },
+        "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+        }
+    }
+}
+
+++++++++++++++++-STEP 1: RUNNING TOOLS-++++++++++++++++
+
+1024
+
+++++++++++++++++-STEP 2: INVOKING MODEL-++++++++++++++++
+
+{
+    "content": "",
+    "additional_kwargs": {
+        "refusal": null
+    },
+    "response_metadata": {
+        "token_usage": {
+            "completion_tokens": 18,
+            "prompt_tokens": 142,
+            "total_tokens": 160,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "model_provider": "openai",
+        "model_name": "gpt-4o-2024-08-06",
+        "system_fingerprint": "fp_f89046aead",
+        "id": "chatcmpl-EglZgEcTpZ5DOvoOfO1G9NeV2DdvA",
+        "service_tier": "default",
+        "finish_reason": "tool_calls",
+        "logprobs": null
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1aa78-1d68-7482-b40d-5c5da816ec09-0",
+    "tool_calls": [
+        {
+            "name": "calculator",
+            "args": {
+                "expression": "1024 - 24"
+            },
+            "id": "call_j9iicO2Nkah93ozC6umpPe8M",
+            "type": "tool_call"
+        }
+    ],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+        "input_tokens": 142,
+        "output_tokens": 18,
+        "total_tokens": 160,
+        "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+        },
+        "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+        }
+    }
+}
+
+++++++++++++++++-STEP 2: RUNNING TOOLS-++++++++++++++++
+
+1000
+
+++++++++++++++++-STEP 3: INVOKING MODEL-++++++++++++++++
+
+{
+    "content": "32 multiplied by 32 is 1024, and subtracting 24 from that result gives you 1000.",
+    "additional_kwargs": {
+        "refusal": null
+    },
+    "response_metadata": {
+        "token_usage": {
+            "completion_tokens": 25,
+            "prompt_tokens": 169,
+            "total_tokens": 194,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cache_write_tokens": null,
+                "cached_tokens": 0
+            }
+        },
+        "model_provider": "openai",
+        "model_name": "gpt-4o-2024-08-06",
+        "system_fingerprint": "fp_f89046aead",
+        "id": "chatcmpl-EglZhRA3rBCoyUShwdNudul0i4fdj",
+        "service_tier": "default",
+        "finish_reason": "stop",
+        "logprobs": null
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1aa78-1ffd-7701-bf5c-a2a26f89831e-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+        "input_tokens": 169,
+        "output_tokens": 25,
+        "total_tokens": 194,
+        "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+        },
+        "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+        }
+    }
+}
+
+Final Answer: 32 multiplied by 32 is 1024, and subtracting 24 from that result gives you 1000.
+
+
+
+Execution summary - len(messages) # Total items in the message list to provide context and continuity so the AI knows what has already happened.
+Message	Type		Action
+1	System			Defines assistant behaviour - You are a helpful assistant
+2	Human			Submits the question - What is 32 multiplied by 32, then subtract 24 from the result?
+3	AI				Requests calculator (32 × 32) - AI requests a tool call to evaluate ("expression": "32 * 32")
+4	Tool			Returns 1024 - Harness invokes tool, returns Output
+5	AI				Requests calculator (1024 − 24) - AI requests a tool call to evaluate ("expression": "1024 - 24")
+6	Tool			Returns 1000 - Harness invokes tool, returns Output
+7	AI				Provides final answer - Final Answer: 32 multiplied by 32 is 1024, and subtracting 24 from that result gives you 1000
+
+
+
+Note: Exact tool calls may vary between runs (e.g. a single call: "32 * 32 - 24").
